@@ -3,13 +3,18 @@ import { Text, View } from "react-native";
 import ModuleDetailCard from "./ModuleDetailCard";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import SmallCard from "./SmallCard";
+import Foundation from "@expo/vector-icons/Foundation";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
 const IconSize = 50;
 const IconsColor = "#c9cbcf";
 
+const SmallIconSize = 40;
+
 const ModuleDetails = () => {
   return (
-    <View className="flex-row justify-between flex-wrap my-5">
+    <View className="flex-row justify-between flex-wrap mt-5">
       <ModuleDetailCard
         name={"Pending Vitals"}
         quantity={4}
@@ -38,6 +43,26 @@ const ModuleDetails = () => {
             color={IconsColor}
           />
         }
+      />
+      <SmallCard
+        Icon={
+          <Foundation
+            name="telephone"
+            size={SmallIconSize}
+            color={IconsColor}
+          />
+        }
+        text={"TeleHealth"}
+      />
+      <SmallCard
+        Icon={
+          <MaterialCommunityIcons
+            name="file-document-edit"
+            size={SmallIconSize}
+            color={IconsColor}
+          />
+        }
+        text={"Careplan"}
       />
     </View>
   );

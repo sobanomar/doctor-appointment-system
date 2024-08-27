@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const ModuleDetailCard = ({ name, quantity, Icon }) => {
+const SmallCard = ({ Icon, text }) => {
   return (
     <View className="w-1/2 flex gap-2 mb-4 ">
       <View
@@ -18,16 +18,13 @@ const ModuleDetailCard = ({ name, quantity, Icon }) => {
           elevation: 2,
         }}
       >
-        <View className="flex-row justify-between items-center ">
-          <Text className="text-5xl font-bold pt-4">
-            {quantity == null ? "-" : quantity}
-          </Text>
+        <View className="flex-row gap-2 items-center ">
           <View>{Icon}</View>
+          <Text className="text-base font-extralight">{text}</Text>
         </View>
-        <Text className="text-base font-extralight ">{name}</Text>
       </View>
     </View>
   );
 };
 
-export default ModuleDetailCard;
+export default SmallCard;

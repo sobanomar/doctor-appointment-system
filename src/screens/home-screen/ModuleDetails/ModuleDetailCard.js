@@ -5,9 +5,9 @@ const ModuleDetailCard = ({ name, quantity, Icon }) => {
   return (
     <View className="w-1/2 flex gap-2 mb-4 ">
       <View
-        className="bg-white rounded-md p-3 border border-neutral-300"
+        className="bg-white rounded-md p-3 border border-blue-300"
         style={{
-          shadowColor: "#000",
+          shadowColor: "#93C5FD",
           shadowOffset: {
             width: 0,
             height: 0,
@@ -18,13 +18,13 @@ const ModuleDetailCard = ({ name, quantity, Icon }) => {
           elevation: 2,
         }}
       >
+        <Text className="text-base font-extralight ">{name}</Text>
         <View className="flex-row justify-between items-center ">
           <Text className="text-5xl font-bold pt-4">
             {quantity == null ? "-" : quantity}
           </Text>
           <View>{Icon}</View>
         </View>
-        <Text className="text-base font-extralight ">{name}</Text>
       </View>
     </View>
   );

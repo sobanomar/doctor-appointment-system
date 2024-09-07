@@ -5,22 +5,27 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import HeaderHome from "./Header";
 import ModuleDetails from "./ModuleDetails";
 import UserMatrics from "./UserMatrics";
+import BottomText from "./BottomText";
 
 const HomeScreen = () => {
   return (
     <View className="bg-blue-50">
       <SafeAreaView>
-        <HeaderBlueBg />
-        <View className="mx-4">
+        <View className="flex flex-col">
           <HeaderHome />
-        </View>
-        <ScrollView className="bg-transparent">
-          <View className="mx-4 mb-32">
-            <ModuleDetails />
-            <UserMatrics />
-            <UserMatrics />
+          <View className="bg-blue-500 rounded-r-full self-start pl-4 pr-3 py-1 mt-3">
+            <Text className="text-white">Today's Summary</Text>
           </View>
-        </ScrollView>
+        </View>
+
+        <View className="mx-3">
+          <ModuleDetails />
+          <ScrollView className="h-[300px]">
+            <UserMatrics />
+            <BottomText />
+            <View className="h-8" />
+          </ScrollView>
+        </View>
       </SafeAreaView>
     </View>
   );

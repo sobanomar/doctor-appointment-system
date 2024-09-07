@@ -5,9 +5,9 @@ const SmallCard = ({ Icon, text }) => {
   return (
     <View className="w-1/2 flex gap-2 mb-4 ">
       <View
-        className="bg-white rounded-md p-3 border border-neutral-300"
+        className="bg-white rounded-md p-3 border border-blue-300"
         style={{
-          shadowColor: "#000",
+          shadowColor: "#93C5FD",
           shadowOffset: {
             width: 0,
             height: 0,

@@ -14,7 +14,7 @@ const SmallIconSize = 40;
 
 const ModuleDetails = () => {
   return (
-    <View className="flex-row justify-between flex-wrap mt-5">
+    <View className="flex-row justify-between flex-wrap mt-3">
       <ModuleDetailCard
         name={"Pending Vitals"}
         quantity={4}

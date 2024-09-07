@@ -5,7 +5,7 @@ import MetricCard from "./MetricCard";
 
 const UserMatrics = () => {
   return (
-    <View className="border border-neutral-300 rounded-md p-5 bg-white mb-4">
+    <View className="border border-blue-300 rounded-md p-5 bg-white mb-4 ">
       <View className="flex-row justify-between items-center">
         <Text className="text-xl font-semibold">Your Metrics</Text>
         <FontAwesome6 name="circle-info" size={24} color="gray" />

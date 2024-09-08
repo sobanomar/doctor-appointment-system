@@ -7,8 +7,8 @@ import SmallCard from "./SmallCard";
 import Foundation from "@expo/vector-icons/Foundation";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
-const IconSize = 50;
-const IconsColor = "#c9cbcf";
+export const IconSize = 50;
+export const IconsColor = "#c9cbcf";
 
 const SmallIconSize = 40;
 
@@ -24,7 +24,13 @@ const ModuleDetails = () => {
       />
       <ModuleDetailCard
         name={"Messages"}
-        Icon={<AntDesign name="message1" size={IconSize} color={IconsColor} />}
+        Icon={
+          <MaterialCommunityIcons
+            name="android-messages"
+            size={60}
+            color={IconsColor}
+          />
+        }
       />
       <ModuleDetailCard
         name={"Devices"}

@@ -1,9 +1,14 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
 const SmallCard = ({ Icon, text }) => {
+  const navigation = useNavigation();
   return (
-    <View className="w-1/2 flex gap-2 mb-4 ">
+    <TouchableOpacity
+      onPress={() => navigation.navigate("CarePlan")}
+      className="w-1/2 flex gap-2 mb-4 "
+    >
       <View
         className="bg-white rounded-md p-3 border border-blue-300"
         style={{
@@ -23,7 +28,7 @@ const SmallCard = ({ Icon, text }) => {
           <Text className="text-base font-extralight">{text}</Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

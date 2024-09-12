@@ -11,7 +11,7 @@ const IconSize = 50;
 
 const VitalCardsSection = () => {
   return (
-    <View className="m-4">
+    <View>
       <VitalCard
         name="Blood Pressure Systolic"
         unit={"mmHG"}

@@ -6,7 +6,7 @@ const SmallCard = ({ Icon, text }) => {
   const navigation = useNavigation();
   return (
     <TouchableOpacity
-      onPress={() => navigation.navigate("CarePlan")}
+      onPress={() => navigation.navigate(text)}
       className="w-1/2 flex gap-2 mb-4 "
     >
       <View

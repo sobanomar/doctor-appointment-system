@@ -1,9 +1,26 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
 const ModuleDetailCard = ({ name, quantity, Icon }) => {
+  const navigation = useNavigation();
+  let navigate;
+
+  if (name == "Pending Vitals") {
+    navigate = "MyTasks";
+  } else if (name == "Messages") {
+    navigate = "Messages";
+  } else if (name == "Devices") {
+    navigate = "Devices";
+  } else if (name == "Assessments") {
+    navigate = "Assessments";
+  }
+
   return (
-    <View className="w-1/2 flex gap-2 mb-4 ">
+    <TouchableOpacity
+      onPress={() => navigation.navigate(navigate)}
+      className="w-1/2 flex gap-2 mb-4 "
+    >
       <View
         className="bg-white rounded-md p-3 border border-blue-300"
         style={{
@@ -26,7 +43,7 @@ const ModuleDetailCard = ({ name, quantity, Icon }) => {
           <View>{Icon}</View>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

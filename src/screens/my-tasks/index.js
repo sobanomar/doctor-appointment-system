@@ -6,14 +6,13 @@ import {
   StatusBar,
   ScrollView,
   RefreshControl,
+  Text,
 } from "react-native";
 import Header from "./Header";
+import CompletedTasks from "./CompletedTasks";
+import PendingTasks from "./PendingTasks";
 
-import HalfCircularVitalIndicator from "../../components/VitalLevelIndicator";
-import VitalCard from "./VitalCardsSection";
-import VitalCardsSection from "./VitalCardsSection";
-
-const CarePlan = () => {
+const MyTasks = () => {
   const [refreshing, setRefreshing] = useState(false);
 
   const onRefresh = () => {
@@ -22,7 +21,6 @@ const CarePlan = () => {
       setRefreshing(false);
     }, 2000);
   };
-
   return (
     <View style={{ flex: 1 }}>
       <SafeAreaView
@@ -43,10 +41,15 @@ const CarePlan = () => {
           }
         >
           <View
-            className="p-4 py-6"
+            className="p-4 py-6 flex space-y-2"
             style={{ flex: 1, backgroundColor: "#F0F9FF" }}
           >
-            <VitalCardsSection />
+            <View>
+              <CompletedTasks />
+            </View>
+            <View>
+              <PendingTasks />
+            </View>
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -54,4 +57,4 @@ const CarePlan = () => {
   );
 };
 
-export default CarePlan;
+export default MyTasks;

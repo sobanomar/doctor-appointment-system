@@ -14,6 +14,7 @@ import MessagesScreen from "../src/screens/Messages";
 import AppointmentsScreen from "../src/screens/AppointmentsScreen";
 import HomeScreen from "../src/screens/home-screen";
 import CarePlan from "../src/screens/care-plan";
+import MyTasks from "../src/screens/my-tasks";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -97,6 +98,7 @@ export default function AppNavigator() {
       >
         <Stack.Screen name="Tabs" component={TabNavigator} />
         <Stack.Screen name="CarePlan" component={CarePlan} />
+        <Stack.Screen name="MyTasks" component={MyTasks} />
       </Stack.Navigator>
     </NavigationContainer>
   );

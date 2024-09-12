@@ -68,7 +68,7 @@ const ModuleDetails = () => {
             color={IconsColor}
           />
         }
-        text={"Careplan"}
+        text={"CarePlan"}
       />
     </View>
   );

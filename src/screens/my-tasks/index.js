@@ -11,7 +11,7 @@ import {
 import Header from "./Header";
 import CompletedTasks from "./CompletedTasks";
 import PendingTasks from "./PendingTasks";
-import AddManualReading from "./AddManualREading";
+import AddManualReading from "./AddManualReading";
 
 const MyTasks = () => {
   const [refreshing, setRefreshing] = useState(false);

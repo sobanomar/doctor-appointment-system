@@ -80,7 +80,7 @@ const PendingTasks = () => {
         </Text>
         {/* Animated Icon */}
         <Animated.View style={animatedIconStyle}>
-          <AntDesign name="caretup" size={20} color={"#c2410c"} />
+          <AntDesign name="caretup" size={16} color={"#c2410c"} />
         </Animated.View>
       </TouchableOpacity>
 

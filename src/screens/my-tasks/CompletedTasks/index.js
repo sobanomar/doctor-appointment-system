@@ -90,7 +90,7 @@ const CompletedTasks = () => {
         </Text>
         {/* Animated Icon */}
         <Animated.View style={animatedIconStyle}>
-          <AntDesign name="caretup" size={20} color={"green"} />
+          <AntDesign name="caretup" size={16} color={"green"} />
         </Animated.View>
       </TouchableOpacity>
 

@@ -9,8 +9,8 @@ import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
-import ResultsScreen from "../src/screens/DetailsScreen";
 import AppointmentsScreen from "../src/screens/AppointmentsScreen";
+import ResultsScreen from "../src/screens/results";
 import HomeScreen from "../src/screens/home-screen";
 import CarePlan from "../src/screens/care-plan";
 import MyTasks from "../src/screens/my-tasks";
@@ -103,6 +103,10 @@ export default function AppNavigator() {
         <Stack.Screen name="Tabs" component={TabNavigator} />
         <Stack.Screen name="CarePlan" component={CarePlan} />
         <Stack.Screen name="MyTasks" component={MyTasks} />
+        <Stack.Screen name="BloodPressureResults" component={MyTasks} />
+        <Stack.Screen name="PulseResults" component={MyTasks} />
+        <Stack.Screen name="GlucoseResults" component={MyTasks} />
+        <Stack.Screen name="WeightResults" component={MyTasks} />
       </Stack.Navigator>
     </NavigationContainer>
   );

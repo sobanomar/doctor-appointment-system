@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "health-application",
-    "slug": "health-application",
+    "slug": "health-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +18,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sobanumar.healthapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "07b0cfab-d026-4523-a36a-a296801d11b5"
+      }
+    },
+    "owner": "sobanumar"
   }
 }

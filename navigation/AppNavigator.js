@@ -16,6 +16,7 @@ import CarePlan from "../src/screens/care-plan";
 import MyTasks from "../src/screens/my-tasks";
 import MessagesScreen from "../src/screens/messages";
 import { HeightPercentage } from "../src/components/utils/HeightPercentage";
+import Profile from "../src/screens/profile";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -107,6 +108,7 @@ export default function AppNavigator() {
         <Stack.Screen name="PulseResults" component={MyTasks} />
         <Stack.Screen name="GlucoseResults" component={MyTasks} />
         <Stack.Screen name="WeightResults" component={MyTasks} />
+        <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

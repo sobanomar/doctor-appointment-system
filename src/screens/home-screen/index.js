@@ -6,7 +6,7 @@ import HeaderHome from "./Header";
 import ModuleDetails from "./ModuleDetails";
 import UserMatrics from "./UserMatrics";
 import BottomText from "./BottomText";
-import { TouchableOpacity } from "react-native-gesture-handler";
+// import { TouchableOpacity } from "react-native-gesture-handler";
 
 const HomeScreen = ({ navigation }) => {
   return (

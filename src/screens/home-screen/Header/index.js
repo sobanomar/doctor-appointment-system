@@ -1,8 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { useNavigation } from "@react-navigation/native";
 
 const Header = () => {
+  const navigation = useNavigation();
   const date = new Date();
   const formattedDate = date.toLocaleDateString("en-GB", {
     day: "2-digit",
@@ -24,7 +26,12 @@ const Header = () => {
         </View>
       </View>
       <View>
-        <Ionicons name="settings-sharp" size={30} color="white" />
+        <Ionicons
+          name="settings-sharp"
+          size={30}
+          color="white"
+          onPress={() => navigation.navigate("Profile")}
+        />
       </View>
     </View>
   );

@@ -31,7 +31,7 @@ const Profile = () => {
             }
           >
             <View
-              className="p-4 py-6 flex space-y-10 justify-between"
+              className="p-4 py-6 flex space-y-6 justify-between"
               style={{ flex: 1, backgroundColor: "#F0F9FF" }}
             >
               <GeneralInfo
@@ -39,7 +39,7 @@ const Profile = () => {
                 lastName={"Patient"}
                 Email={"kimw7152@gmail.com"}
               />
-              <View className="shadow-lg rounded-lg  border-stone-100 border-spacing-1 border-2 bg-blue-50 p-4 ">
+              <View className="shadow-lg rounded-lg  border-stone-100 border-spacing-1 border-2 bg-white p-4 ">
                 <Text className="font-medium">Settings & Perferences</Text>
                 {/* <View className="flex-row justify-between items-center mt-5">
                   <View className="flex flex-row gap-4">

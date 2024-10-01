@@ -3,23 +3,18 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import React from "react";
 
 const Setting = ({ Title, SubTitle }) => {
-  let classes = "flex flex-row items-center ";
-  Title == "Change password"
-    ? (classes = "flex flex-row items-center")
-    : (classes = "flex flex-row items-center gap-x-2.5 mr-2.5");
+  let classes = "flex flex-row items-center w-8 justify-center";
   return (
-    <View
-      className={`flex-row justify-between items-center mt-${
-        Title == "Change password" ? "5" : "8"
-      }`}
-    >
-      <View className="flex flex-row gap-4">
+    <View className={`flex-row justify-between items-center mt-8`}>
+      <View className="flex flex-row space-x-4">
         <View className={classes}>
           {Title == "Change password" && (
-            <EvilIcons name="lock" size={50} color="#737373" />
+            // <EvilIcons name="lock" size={60} color="#737373" />
+            <FontAwesome5 name="unlock-alt" size={30} color="#737373" />
           )}
           {Title == "Change email" && (
             <MaterialCommunityIcons
@@ -38,7 +33,7 @@ const Setting = ({ Title, SubTitle }) => {
         </View>
       </View>
       <View>
-        <AntDesign name="right" size={24} color="black" />
+        <AntDesign name="right" size={20} color="black" />
       </View>
     </View>
   );

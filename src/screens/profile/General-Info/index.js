@@ -4,10 +4,10 @@ import React from "react";
 
 const GeneralInfo = ({ firstName, lastName, Email }) => {
   return (
-    <View className="shadow-lg rounded-lg bg-blue-50 p-4 flex-row justify-between items-center">
+    <View className="shadow-lg rounded-lg bg-white p-4 flex-row justify-between items-center">
       <View className="flex flex-row gap-4">
-        <View className="bg-blue-500 rounded-full flex flex-row items-center ">
-          <Text className="text-white px-4 text-lg">
+        <View className="bg-blue-500 rounded-full w-12 h-12 justify-center items-center flex flex-row">
+          <Text className="text-white text-lg">
             {firstName[0] + lastName[0]}
           </Text>
         </View>

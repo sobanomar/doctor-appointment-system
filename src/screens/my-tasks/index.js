@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  SafeAreaView,
   View,
   Platform,
   StatusBar,
@@ -12,6 +11,7 @@ import Header from "./Header";
 import CompletedTasks from "./CompletedTasks";
 import PendingTasks from "./PendingTasks";
 import AddManualReading from "./AddManualReading";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const MyTasks = () => {
   const [refreshing, setRefreshing] = useState(false);
@@ -26,9 +26,11 @@ const MyTasks = () => {
     <View style={{ flex: 1 }}>
       <SafeAreaView
         className="h-full"
-        style={{
-          paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-        }}
+        style={
+          {
+            // paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+          }
+        }
       >
         <View className="bg-blue-50 flex-1">
           <Header />

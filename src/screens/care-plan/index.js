@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  SafeAreaView,
   View,
   Platform,
   StatusBar,
@@ -12,6 +11,7 @@ import Header from "./Header";
 import HalfCircularVitalIndicator from "../../components/VitalLevelIndicator";
 import VitalCard from "./VitalCardsSection";
 import VitalCardsSection from "./VitalCardsSection";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const CarePlan = () => {
   const [refreshing, setRefreshing] = useState(false);
@@ -28,7 +28,7 @@ const CarePlan = () => {
       <SafeAreaView
         style={{
           flex: 1,
-          paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+          // paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
         }}
       >
         <Header />

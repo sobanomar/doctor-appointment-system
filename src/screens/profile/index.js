@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./header";
 import {
-  SafeAreaView,
   View,
   Platform,
   StatusBar,
@@ -15,15 +14,11 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import GeneralInfo from "./General-Info";
 import Setting from "./Setting";
+import { SafeAreaView } from "react-native-safe-area-context";
 const Profile = () => {
   return (
     <View style={{ flex: 1 }}>
-      <SafeAreaView
-        className="h-full"
-        style={{
-          paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-        }}
-      >
+      <SafeAreaView className="h-full">
         <View className="bg-blue-50 flex-1">
           <Header />
           <ScrollView
